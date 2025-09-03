@@ -13,7 +13,7 @@ This task focuses on dynamic analysis rather than complex reversing — a perfec
 After downloading the challenge file, I first checked its properties and made it executable:
 
 chmod +x Challenge_1609966715991.Challenge
-./Challenge_1609966715991.Challenge
+ ./Challenge_1609966715991.Challenge
 
 [Screenshot 1: Running the binary for the first time](./screenshots/01-run-binary.png)
 

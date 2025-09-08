@@ -12,8 +12,9 @@ This task focuses on dynamic analysis rather than complex reversing — a perfec
 ### 1. Making the binary executable
 After downloading the challenge file, I first checked its properties and made it executable:
 
-chmod +x Challenge
-./Challenge
+chmod +x Challenge_1609966715991.Challenge
+
+./Challenge_1609966715991.Challenge
 
 [Screenshot 1: Running the binary for the first time](./screenshots/01-run-binary.png)
 
@@ -21,7 +22,7 @@ chmod +x Challenge
 
 To better understand how the program checks the username, I ran it with ltrace:
 
-ltrace ./Challenge
+ltrace ./Challenge_1609966715991.Challenge
 
 This revealed a function call comparing my input with the expected value.
 At this point, I identified where the check happens. (Sensitive parts of the output are blurred to respect THM rules.)

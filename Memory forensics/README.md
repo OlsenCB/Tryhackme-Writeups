@@ -29,7 +29,7 @@ I saved the hash to a file and used John the Ripper with the RockYou wordlist to
 After a short time, John the Ripper successfully recovered the password.
 
 
-[Screenshot 1: Cracked password for John](./screenshots/01-john-password.png)
+[Screenshot 1: Cracked password for John](./Screenshots/01-john-password.png)
 
 ### 2. Finding last shutdown time
 
@@ -43,7 +43,7 @@ To retrieve the last shutdown time, I ran:
 
 volatility -f Snapshot19.vmem --profile=Win7SP1x64 shutdowntime
 
-[Screenshot 2: Last shutdown time](./screenshots/02-shutdown-time.png)
+[Screenshot 2: Last shutdown time](./Screenshots/02-shutdown-time.png)
 
 ### 3. Reviewing John’s command history
 
@@ -53,7 +53,7 @@ volatility -f Snapshot19.vmem --profile=Win7SP1x64 consoles
 
 From the results, one interesting command stood out: John saved a flag into test.txt.
 
-[Screenshot 3: Console history](./screenshots/03-console-history.png)
+[Screenshot 3: Console history](./Screenshots/03-console-history.png)
 
 ### 4. Extracting TrueCrypt password
 
@@ -66,7 +66,7 @@ volatility -f Snapshot14.vmem --profile=Win7SP1x64 truecryptpassphrase
 
 The output revealed the stored TrueCrypt passphrase.
 
-[Screenshot 4: TrueCrypt password](./screenshots/04-truecrypt-pass.png)
+[Screenshot 4: TrueCrypt password](./Screenshots/04-truecrypt-pass.png)
 
 ---
 
